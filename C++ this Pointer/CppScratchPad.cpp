@@ -6,6 +6,19 @@ using std::endl;
 // --------------------------------- C++ this Pointer ----------------------------------------------------
 // ref link:https://www.youtube.com/watch?v=I2-RmR7JRdc&list=PLRwVmtr-pp056ahRbFrYbeAnIu2qvXPFe&index=10
 
+class Cow
+{
+
+};
+
+void main()
+{
+
+}
+
+
+
+
 
 
 
