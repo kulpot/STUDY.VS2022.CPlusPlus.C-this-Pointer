@@ -3,6 +3,25 @@
 using std::cout;
 using std::endl;
 
+// --------------------------------- C++ this Pointer ----------------------------------------------------
+// ref link:https://www.youtube.com/watch?v=I2-RmR7JRdc&list=PLRwVmtr-pp056ahRbFrYbeAnIu2qvXPFe&index=10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ----------------------------- C++ Unions --------------------------------------------
 // ref link:https://www.youtube.com/watch?v=tW5baj_W14U&list=PLRwVmtr-pp056ahRbFrYbeAnIu2qvXPFe&index=9
 // www.asciitable.com/index/asciifull.gif
