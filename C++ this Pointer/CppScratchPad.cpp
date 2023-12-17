@@ -26,26 +26,26 @@ using std::endl;
 // ref link:https://www.youtube.com/watch?v=tW5baj_W14U&list=PLRwVmtr-pp056ahRbFrYbeAnIu2qvXPFe&index=9
 // www.asciitable.com/index/asciifull.gif
 
-union MyUnion
-{
-	short myShort;		// short 2bytes, char 1byte , float 32bits
-	char myChar;
-	float floatValue;
-	unsigned int intValue;
-};
-
-void main()
-{
-	MyUnion myUnion;
-	myUnion.intValue = 0x0000;
-	cout << myUnion.floatValue << endl;
-
-	myUnion.myShort = 0;			// 00 00
-	//myUnion.myChar = 'j';			// 00 6A
-	myUnion.myShort = 0x6b;			// 00 6B
-	cout << myUnion.myShort << endl;
-	cout << std::hex << myUnion.myShort << endl;
-}
+//union MyUnion
+//{
+//	short myShort;		// short 2bytes, char 1byte , float 32bits
+//	char myChar;
+//	float floatValue;
+//	unsigned int intValue;
+//};
+//
+//void main()
+//{
+//	MyUnion myUnion;
+//	myUnion.intValue = 0x0000;
+//	cout << myUnion.floatValue << endl;
+//
+//	myUnion.myShort = 0;			// 00 00
+//	//myUnion.myChar = 'j';			// 00 6A
+//	myUnion.myShort = 0x6b;			// 00 6B
+//	cout << myUnion.myShort << endl;
+//	cout << std::hex << myUnion.myShort << endl;
+//}
 
 
 
