@@ -21,22 +21,26 @@ public:
 	void printThisPointer() const
 	{	// << this << keyword - points the address
 		cout << this << endl;		//000000DDD5B7F8F4 - hexadecimal adress
-		this->printThisPointer(); // using this-> sometimes waste bandwidth
+		//this->printThisPointer(); // using this-> sometimes waste bandwidth
+	}
+	Cow contrived() const	// pass a copy
+	{
+		return *this;	// *this points to current instance
 	}
 };
 
 void main()
 {
-	Cow betsy;
-	cout << &betsy << endl;			//000000DDD5B7F8F4
-	betsy.printThisPointer();
-	Cow georgy;
-	cout << &georgy << endl;		
-	georgy.printThisPointer();
-	Cow* bobby = new Cow;
-	cout << bobby << endl;
-	bobby->printThisPointer();
-	delete bobby;
+	//Cow betsy;
+	//cout << &betsy << endl;			//000000DDD5B7F8F4
+	//betsy.printThisPointer();
+	//Cow georgy;
+	//cout << &georgy << endl;		
+	//georgy.printThisPointer();
+	//Cow* bobby = new Cow;
+	//cout << bobby << endl;
+	//bobby->printThisPointer();
+	//delete bobby;
 }
 
 
