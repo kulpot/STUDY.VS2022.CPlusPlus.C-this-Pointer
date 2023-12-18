@@ -6,12 +6,14 @@ using std::endl;
 // --------------------------------- C++ this Pointer ----------------------------------------------------
 // ref link:https://www.youtube.com/watch?v=I2-RmR7JRdc&list=PLRwVmtr-pp056ahRbFrYbeAnIu2qvXPFe&index=10
 
+
+
 class Cow
 {
 public:
 	void printThisPointer() const
-	{
-		cout << this << endl;		//000000DDD5B7F8F4
+	{	// this keyword - points the address
+		cout << this << endl;		//000000DDD5B7F8F4 - hexadecimal adress
 	}
 };
 
@@ -20,6 +22,13 @@ void main()
 	Cow betsy;
 	cout << &betsy << endl;			//000000DDD5B7F8F4
 	betsy.printThisPointer();
+	Cow georgy;
+	cout << &georgy << endl;		
+	georgy.printThisPointer();
+	Cow* bobby = new Cow;
+	cout << bobby << endl;
+	bobby->printThisPointer();
+	delete bobby;
 }
 
 
