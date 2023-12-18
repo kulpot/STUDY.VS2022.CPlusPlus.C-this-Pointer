@@ -8,12 +8,18 @@ using std::endl;
 
 class Cow
 {
-
+public:
+	void printThisPointer() const
+	{
+		cout << this << endl;
+	}
 };
 
 void main()
 {
-
+	Cow betsy;
+	cout << &betsy << endl;
+	betsy.printThisPointer();
 }
 
 
