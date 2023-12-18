@@ -11,14 +11,14 @@ class Cow
 public:
 	void printThisPointer() const
 	{
-		cout << this << endl;
+		cout << this << endl;		//000000DDD5B7F8F4
 	}
 };
 
 void main()
 {
 	Cow betsy;
-	cout << &betsy << endl;
+	cout << &betsy << endl;			//000000DDD5B7F8F4
 	betsy.printThisPointer();
 }
 
