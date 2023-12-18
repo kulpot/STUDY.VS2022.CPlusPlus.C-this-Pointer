@@ -10,10 +10,18 @@ using std::endl;
 
 class Cow
 {
+	int maxHeartbets;
+	Cow(int maxHeartbeats)
+	//Cow(int maxBears)
+	{
+		this->maxHeartbets = maxHeartbeats;
+		//this->maxHeartbets = maxBeats;
+	}
 public:
 	void printThisPointer() const
-	{	// this keyword - points the address
+	{	// << this << keyword - points the address
 		cout << this << endl;		//000000DDD5B7F8F4 - hexadecimal adress
+		this->printThisPointer(); // using this-> sometimes waste bandwidth
 	}
 };
 
